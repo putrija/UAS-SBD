@@ -1,0 +1,127 @@
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| belajar_query      |
+| classroom          |
+| classroomcoba      |
+| information_schema |
+| inventory          |
+| logintubes         |
+| mysql              |
+| pengumpulan_tugas  |
+| performance_schema |
+| perpus_laravel     |
+| phpmyadmin         |
+| proweb             |
+| stok_barang        |
+| stokbarang         |
+| test               |
+| toko_online        |
+| tubes8             |
+| website_laravel    |
++--------------------+
+18 rows in set (0.001 sec)
+
+MariaDB [(none)]> select user,host from mysql.user where user='task_manager';
+Empty set (0.002 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| belajar_query      |
+| classroom          |
+| classroomcoba      |
+| information_schema |
+| inventory          |
+| logintubes         |
+| mysql              |
+| pengumpulan_tugas  |
+| performance_schema |
+| perpus_laravel     |
+| phpmyadmin         |
+| proweb             |
+| stok_barang        |
+| stokbarang         |
+| task_manager       |
+| test               |
+| toko_online        |
+| tubes8             |
+| website_laravel    |
++--------------------+
+19 rows in set (0.001 sec)
+
+MariaDB [(none)]> select user,host from mysql.user where user='task_manager';
+Empty set (0.001 sec)
+
+MariaDB [(none)]> select user,host from mysql.user where user='root';
++------+-----------+
+| User | Host      |
++------+-----------+
+| root | 127.0.0.1 |
+| root | ::1       |
+| root | localhost |
++------+-----------+
+3 rows in set (0.002 sec)
+
+MariaDB [(none)]> select user from mysql;
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> MariaDB [(none)]> notee
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| belajar_query      |
+| classroom          |
+| classroomcoba      |
+| information_schema |
+| inventory          |
+| logintubes         |
+| mysql              |
+| pengumpulan_tugas  |
+| performance_schema |
+| perpus_laravel     |
+| phpmyadmin         |
+| proweb             |
+| stok_barang        |
+| stokbarang         |
+| task_manager       |
+| test               |
+| toko_online        |
+| tubes8             |
+| website_laravel    |
++--------------------+
+19 rows in set (0.001 sec)
+
+MariaDB [(none)]> use task_manager;
+Database changed
+MariaDB [task_manager]> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+MariaDB [task_manager]> show tables;
++------------------------+
+| Tables_in_task_manager |
++------------------------+
+| failed_jobs            |
+| migrations             |
+| password_resets        |
+| personal_access_tokens |
+| task_categories        |
+| task_dailies           |
+| task_indicators        |
+| task_persons           |
+| task_plans             |
+| users                  |
++------------------------+
+10 rows in set (0.001 sec)
+
+MariaDB [task_manager]> CREATE VIEW 211402063 AS SELECT * FROM task_plans;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '211402063 AS SELECT * FROM task_plans' at line 1
+MariaDB [task_manager]> CREATE VIEW 211402063 AS SELECT * FROM task_plans;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '211402063 AS SELECT * FROM task_plans' at line 1
+MariaDB [task_manager]> CREATE VIEW putrija AS SELECT * FROM task_plans;
+Query OK, 0 rows affected (0.135 sec)
+
+MariaDB [task_manager]> show view;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'view' at line 1
+MariaDB [task_manager]> notee
